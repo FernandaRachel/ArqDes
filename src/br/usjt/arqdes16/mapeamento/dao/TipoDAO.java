@@ -32,7 +32,7 @@ public class TipoDAO {
 
 	@SuppressWarnings("unchecked")
 	public List<Tipo> selecionarTodos() {
-		return manager.createQuery("select from Tipo t").getResultList();
+		return manager.createQuery("select t from Tipo t").getResultList();
 	}
 
 }
